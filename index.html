@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Гараж — Барбершоп в Гатчине | Мужские стрижки и опасное бритьё</title>
+  <meta name="description" content="Барбершоп «Гараж» в Гатчине на ул. Хохлова, 8. Мужские и детские стрижки, моделирование бороды, королевское опасное бритьё. Запись по телефону +7 (960) 234-47-47.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Гараж — Мужской барбершоп в Гатчине">
+  <meta property="og:description" content="Приходи, уходи своим человеком. Стрижки, борода и бритьё на ул. Хохлова, 8.">
+  <meta property="og:image" content="images/portfolio/interior-main.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Шрифты Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── 01. ИНДИКАТОР ПРОКРУТКИ ─── -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ─── 02. ШАПКА САЙТА ─── -->
+  <header class="top" id="top-header">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Барбершоп Гараж — на главную">
+        <span class="logo-main">ГАРАЖ</span>
+        <span class="logo-sub">Барбершоп · Гатчина</span>
+      </a>
+
+      <nav aria-label="Основное меню">
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn solid d open-booking-modal" href="#booking">Онлайн-запись</a>
+        <a class="btn d" href="tel:+79602344747">+7 (960) 234-47-47</a>
+
+        <button class="burger" id="burger" aria-label="Открыть мобильное меню" aria-expanded="false">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── МОБИЛЬНАЯ НАВИГАЦИЯ ─── -->
+  <nav class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+    <a href="#services">Услуги и цены</a>
+    <a href="#gallery">Портфолио</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a class="btn solid open-booking-modal" href="#booking" style="font-size:14px;">Онлайн-запись</a>
+    <a class="btn" href="tel:+79602344747" style="font-size:14px;">+7 (960) 234-47-47</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- ─── 03. HERO-СЕКЦИЯ (ТЕКСТ СДВИНУТ ВЛЕВО, НАСТОЯЩЕЕ ФОТО БАРБЕРШОПА) ─── -->
+    <section class="hero" aria-label="Главный экран">
+      <!-- Фотография настоящего интерьера барбершопа (без сторонних дизайн-макетов) -->
+      <div class="hero-photo" aria-hidden="true">
+        <img
+          src="images/portfolio/interior-main.webp"
+          alt="Интерьер барбершопа Гараж в Гатчине"
+          width="768"
+          height="576"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="hero-badge rv">
+            <span class="hero-badge__dot"></span>
+            Гатчина · Ул. Хохлова, 8 · До 21:00
+          </div>
+
+          <h1 class="rv">
+            <span class="ln"><span style="--i:0">Приходи,</span></span>
+            <span class="ln"><span style="--i:1">уходи своим</span></span>
+            <span class="ln"><span style="--i:2">человеком</span></span>
+          </h1>
+
+          <p class="rv">
+            Мужские и детские стрижки, оформление бороды и королевское опасное бритьё с распариванием. Правильная мужская атмосфера и профессионализм в каждой детали.
+          </p>
+
+          <div class="actions rv">
+            <a class="btn solid open-booking-modal" href="#booking" data-service="Мужская стрижка">Записаться онлайн</a>
+            <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
+          </div>
+
+          <a class="rating-badge rv" href="https://yandex.ru/maps/org/garazh/180388561178/reviews/" target="_blank" rel="noopener">
+            <span class="stars">★★★★★</span>
+            <span class="num">5,0</span>
+            <span class="text">— 195+ отзывов на Яндекс Картах</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 04. БЕГУЩАЯ СТРОКА ТЕХНИЧЕСКИХ ДАННЫХ ─── -->
+    <div class="info-ticker" aria-hidden="true">
+      <div class="info-ticker__track">
+        <span class="info-ticker__item">Гатчина, ул. Хохлова, 8</span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Ежедневно <strong>с 10:00 до 21:00</strong></span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Телефон: <strong>+7 (960) 234-47-47</strong></span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Рейтинг <strong>5.0 / 5.0</strong></span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Мужские и детские стрижки</span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Королевское бритьё опасной бритвой</span>
+        <span class="info-ticker__sep"></span>
+        <span class="info-ticker__item">Камуфляж седины</span>
+        <span class="info-ticker__sep"></span>
+      </div>
+    </div>
+
+    <!-- ─── 05. ФОТОПОЛОСА АТМОСФЕРЫ (STRIP) ─── -->
+    <div class="strip" aria-hidden="true">
+      <figure class="tile rv" data-caption="Рабочий стол барбера и профессиональный инструмент">
+        <img src="images/portfolio/haircut-1.webp" alt="Инструменты барбера" loading="lazy" width="400" height="400">
+      </figure>
+      <figure class="tile rv" data-caption="Зона ожидания и кожаный диван барбершопа">
+        <img src="images/portfolio/haircut-2.webp" alt="Интерьер зоны ожидания" loading="lazy" width="400" height="400">
+      </figure>
+      <figure class="tile rv" data-caption="Неоновая вывеска и атрибутика Гаража">
+        <img src="images/portfolio/haircut-3.webp" alt="Неоновая вывеска" loading="lazy" width="400" height="400">
+      </figure>
+      <figure class="tile rv" data-caption="Премиальная косметика для ухода за волосами и бородой">
+        <img src="images/portfolio/interior-main.webp" alt="Зал барбершопа" loading="lazy" width="400" height="400">
+      </figure>
+    </div>
+
+    <!-- ─── 06. УСЛУГИ И ЦЕНЫ (ЧИСТЫЙ ПРАЙС-ЛИСТ БЕЗ ФОТОГРАФИЙ) ─── -->
+    <section class="sec" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="sec-label rv">Прайс-лист</p>
+        <h2 class="rv" id="services-title">Услуги и стоимость</h2>
+
+        <!-- Фильтр категорий -->
+        <div class="svc-tabs rv" role="tablist" aria-label="Категории услуг">
+          <button class="tab-btn svc-tab-btn active" data-filter="all">Все услуги</button>
+          <button class="tab-btn svc-tab-btn" data-filter="haircut">Стрижки</button>
+          <button class="tab-btn svc-tab-btn" data-filter="beard">Борода и бритьё</button>
+          <button class="tab-btn svc-tab-btn" data-filter="combo">Комплексы</button>
+        </div>
+
+        <div class="svc-grid">
+
+          <!-- 01. Мужская стрижка -->
+          <article class="svc rv" data-cat="haircut">
+            <div class="svc-header">
+              <span class="svc-badge">Стрижка</span>
+              <h3>Мужская стрижка</h3>
+            </div>
+            <p class="svc-desc">Индивидуальный подбор формы с учётом черт лица, мытьё головы до и после стрижки, сушка и укладка премиум-стайлингом.</p>
+            <div class="svc-footer">
+              <span class="price">1&nbsp;300&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Мужская стрижка">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 02. Детская стрижка -->
+          <article class="svc rv" data-cat="haircut">
+            <div class="svc-header">
+              <span class="svc-badge">Стрижка</span>
+              <h3>Детская стрижка</h3>
+            </div>
+            <p class="svc-desc">Стильная модельная стрижка для юных джентльменов до 12 лет. Внимательные барберы, комфортная обстановка и отличный результат.</p>
+            <div class="svc-footer">
+              <span class="price">1&nbsp;200&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Детская стрижка">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 03. Моделирование бороды -->
+          <article class="svc rv" data-cat="beard">
+            <div class="svc-header">
+              <span class="svc-badge">Борода</span>
+              <h3>Моделирование бороды</h3>
+            </div>
+            <p class="svc-desc">Создание чёткой геометрии, выравнивание длины, подбривание контуров шеи и щёк шаветкой, нанесение питательного масла.</p>
+            <div class="svc-footer">
+              <span class="price">800&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Моделирование бороды">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 04. Опасное бритьё -->
+          <article class="svc rv" data-cat="beard">
+            <div class="svc-header">
+              <span class="svc-badge">Бритьё</span>
+              <h3>Опасное бритьё</h3>
+            </div>
+            <p class="svc-desc">Традиционный мужской ритуал: распаривание горячим полотенцем, тёплая пена, чистое бритьё и охлаждающий уход после бритья.</p>
+            <div class="svc-footer">
+              <span class="price">1&nbsp;100&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Опасное бритьё">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 05. Камуфляж седины головы -->
+          <article class="svc rv" data-cat="haircut">
+            <div class="svc-header">
+              <span class="svc-badge">Уход</span>
+              <h3>Камуфляж головы</h3>
+            </div>
+            <p class="svc-desc">Естественная маскировка седины специальным мужским красителем. Без эффекта парика — тон смывается равномерно и незаметно.</p>
+            <div class="svc-footer">
+              <span class="price">1&nbsp;000&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Камуфляж головы">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 06. Камуфляж бороды -->
+          <article class="svc rv" data-cat="beard">
+            <div class="svc-header">
+              <span class="svc-badge">Уход</span>
+              <h3>Камуфляж бороды</h3>
+            </div>
+            <p class="svc-desc">Выравнивание тона бороды, скрытие седых волосков и придание визуальной плотности контурам всего за 15 минут.</p>
+            <div class="svc-footer">
+              <span class="price">800&nbsp;₽</span>
+              <button class="btn open-booking-modal" type="button" data-service="Камуфляж бороды">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 07. Комплекс Стрижка + Борода -->
+          <article class="svc rv" data-cat="combo">
+            <div class="svc-header">
+              <span class="svc-badge">Комплекс</span>
+              <h3>Стрижка + Борода</h3>
+            </div>
+            <p class="svc-desc">Полный порядок в едином визите: стрижка волос с фейдом и комплексное моделирование бороды с распариванием со скидкой.</p>
+            <div class="svc-footer">
+              <span class="price">1&nbsp;900&nbsp;₽</span>
+              <button class="btn solid open-booking-modal" type="button" data-service="Стрижка + Борода">Записаться</button>
+            </div>
+          </article>
+
+          <!-- 08. Комплекс Отец + Сын -->
+          <article class="svc rv" data-cat="combo">
+            <div class="svc-header">
+              <span class="svc-badge">Комплекс</span>
+              <h3>Отец + Сын</h3>
+            </div>
+            <p class="svc-desc">Совместный мужской визит: мужская стрижка для папы и детская стрижка для сына у лучших мастеров одновременно.</p>
+            <div class="svc-footer">
+              <span class="price">2&nbsp;300&nbsp;₽</span>
+              <button class="btn solid open-booking-modal" type="button" data-service="Отец + Сын">Записаться</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Цифры и факты -->
+        <div class="stats-row rv">
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="195">0</span><span class="stat-unit">+</span></span>
+            <div class="stat-label">Отзывов на Яндекс Картах</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5,0 <span class="stat-unit">★</span></span>
+            <div class="stat-label">Безупречный рейтинг</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="4">0</span> <span class="stat-unit">года</span></span>
+            <div class="stat-label">Работы в Гатчине</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num"><span class="counter" data-target="10000">0</span><span class="stat-unit">+</span></span>
+            <div class="stat-label">Довольных клиентов</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── 07. ПОРТФОЛИО РЕАЛЬНЫХ РАБОТ (ГАЛЕРЕЯ) ─── -->
+    <section class="sec gal-sec" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="sec-label rv">Портфолио</p>
+        <h2 class="rv" id="gallery-title">Работы наших мастеров</h2>
+
+        <!-- Фильтры галереи -->
+        <div class="gallery-filter rv" role="tablist" aria-label="Фильтр работ">
+          <button class="tab-btn gal-tab-btn active" data-filter="haircut">Все стрижки</button>
+          <button class="tab-btn gal-tab-btn" data-filter="interior">Интерьер</button>
+        </div>
+
+        <!-- Масонри сетка ТОЛЬКО реальных фотографий барбершопа -->
+        <div class="gal-masonry rv">
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Мужская стрижка с зачёсом и фейдом">
+            <img src="images/portfolio/cut-1.webp" alt="Мужская стрижка с зачёсом и фейдом" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Мужская стрижка</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Детская стрижка с рисунком на виске">
+            <img src="images/portfolio/cut-2.webp" alt="Детская стрижка с рисунком на виске" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Детская стрижка</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Моделирование бороды и стрижка с фейдом">
+            <img src="images/portfolio/cut-3.webp" alt="Стрижка с фейдом и оформленная борода" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Борода и фейд</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Бритьё лица опасной бритвой">
+            <img src="images/portfolio/cut-4.webp" alt="Опасное бритьё" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Опасное бритьё</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Стрижка с чёлкой и фейдом">
+            <img src="images/portfolio/cut-5.webp" alt="Стрижка с чёлкой и фейдом" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Стрижка с чёлкой</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="haircut" data-caption="Стрижка с коротким затылком, вид сбоку">
+            <img src="images/portfolio/cut-6.webp" alt="Стрижка с коротким затылком, вид сбоку" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Стрижка в профиль</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Вход в барбершоп: вывеска в окне и вывеска с ножницами">
+            <img src="images/portfolio/interior-1.webp" alt="Вход в барбершоп «Гараж»" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Вход в «Гараж»</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Зал и рабочие места барбершопа «Гараж»">
+            <img src="images/portfolio/interior-2.webp" alt="Зал барбершопа и рабочий стол с инструментом" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Зал и рабочие места</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Зона ожидания: кожаный диван и ковёр">
+            <img src="images/portfolio/interior-3.webp" alt="Зона ожидания с диваном и красным ковром" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Зона ожидания</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Неоновая вывеска и атрибутика «Гаража»">
+            <img src="images/portfolio/interior-4.webp" alt="Неоновая вывеска на чёрной стене" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Неоновая вывеска</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Полка с косметикой и барабанная установка">
+            <img src="images/portfolio/interior-5.webp" alt="Полка с косметикой и барабанная установка" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Полка и барабаны</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Постеры и таблички на стене">
+            <img src="images/portfolio/interior-6.webp" alt="Постеры и таблички на чёрной стене" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Постеры</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Модель велосипеда на столе">
+            <img src="images/portfolio/interior-7.webp" alt="Модель велосипеда на столе на фоне зала" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Детали зала</span></div>
+          </div>
+
+          <div class="zoom-item" data-cat="interior" data-caption="Боксёрские перчатки на цепи">
+            <img src="images/portfolio/interior-8.webp" alt="Боксёрские перчатки на цепи" loading="lazy">
+            <div class="zoom-overlay"><span class="zoom-title">Боксёрские перчатки</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 08. ОТЗЫВЫ КЛИЕНТОВ С ЯНДЕКС КАРТ ─── -->
+    <section class="sec" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <p class="sec-label rv">Репутация</p>
+        <h2 class="rv" id="reviews-title">Что говорят клиенты</h2>
+
+        <div class="reviews-grid rv">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Отличный барбершоп! Стригусь здесь уже второй год. Всегда понимают, что нужно, без лишних слов. Фейд идеальный, инструмент чистый, атмосфера огонь!»</p>
+            <div class="review-author">
+              <span class="review-name">Александр К.</span>
+              <span class="review-source">Яндекс Карты</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Привёл сына на стрижку, в итоге подстригся и сам. Ребёнок обычно крутится, но мастер нашёл подход за минуту. Стрижки топ! Однозначно рекомендую!»</p>
+            <div class="review-author">
+              <span class="review-name">Дмитрий В.</span>
+              <span class="review-source">Яндекс Карты</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Опасное бритьё с распариванием — отдельный кайф. После процедуры кожа как новая. Настоящий мужской клуб без пафоса, только качество.»</p>
+            <div class="review-author">
+              <span class="review-name">Михаил С.</span>
+              <span class="review-source">Яндекс Карты</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;" class="rv">
+          <a class="btn" href="https://yandex.ru/maps/org/garazh/180388561178/reviews/" target="_blank" rel="noopener">Читать все 195+ отзывов на Яндексе</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── 09. КОНТАКТЫ И ПОДВАЛ ─── -->
+  <footer class="contacts" id="contacts" role="contentinfo">
+    <div class="wrap sec c-grid">
+      <div>
+        <p class="sec-label rv">Где мы находимся</p>
+        <h2 class="rv">Ждём вас в «Гараже»</h2>
+
+        <dl class="rv">
+          <dt>Адрес салона</dt>
+          <dd>Гатчина, ул. Хохлова, 8, 1 этаж</dd>
+
+          <dt>Телефон для связи</dt>
+          <dd><a href="tel:+79602344747">+7 (960) 234-47-47</a></dd>
+
+          <dt>Режим работы</dt>
+          <dd>Ежедневно с 10:00 до 21:00</dd>
+        </dl>
+
+        <div class="actions rv">
+          <a class="btn solid open-booking-modal" href="#booking">Записаться онлайн</a>
+          <a class="btn" href="https://yandex.ru/maps/10867/gatchina/house/ulitsa_khokhlova_8/Z0kYdwViT0QDQFtjfXl2dXhiZg==/" target="_blank" rel="noopener">Маршрут на карте</a>
+        </div>
+      </div>
+
+      <!-- Фото входа в барбершоп -->
+      <figure class="rv">
+        <img src="images/portfolio/interior-main.webp" alt="Интерьер и вход в барбершоп Гараж" loading="lazy">
+        <figcaption>Ориентир: вывеска «Гараж» в окне и зелёная вывеска с ножницами у двери.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap foot">
+      <span>© 2026 «Гараж» — Мужской барбершоп в Гатчине. Все права защищены.</span>
+      <div class="foot-stripe" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <!-- ─── 10. МОДАЛЬНОЕ ОКНО ОНЛАЙН-ЗАПИСИ ─── -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Закрыть модальное окно">✕</button>
+      <h3 class="modal-title" id="modal-heading">Запись в «Гараж»</h3>
+      <p class="modal-sub">Оставьте контакты, и администратор подтвердит удобное время за 5 минут.</p>
+
+      <form id="booking-form">
+        <div class="form-group">
+          <label class="form-label" for="modal-name">Ваше имя</label>
+          <input class="form-input" type="text" id="modal-name" placeholder="Как к вам обращаться?" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-phone">Номер телефона</label>
+          <input class="form-input" type="tel" id="modal-phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-service">Желаемая услуга</label>
+          <input class="form-input" type="text" id="modal-service" value="Мужская стрижка">
+        </div>
+
+        <button class="btn solid" type="submit" style="width: 100%; margin-top: 10px;">Подтвердить запись</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ─── 11. ЛАЙТБОКС ДЛЯ ПРОСМОТРА ФОТО ─── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" aria-label="Закрыть">✕</button>
+      <button class="lightbox__nav lightbox__nav--prev" aria-label="Предыдущее фото">‹</button>
+      <img class="lightbox__img" src="" alt="Фото работы">
+      <div class="lightbox__caption"></div>
+      <button class="lightbox__nav lightbox__nav--next" aria-label="Следующее фото">›</button>
+    </div>
+  </div>
+
+  <!-- ─── 12. КНОПКА «НАВЕРХ» ─── -->
+  <button class="scroll-top" aria-label="Наверх страницы">↑</button>
+
+  <!-- ─── 13. СКРИПТЫ ─── -->
+  <script src="script.js"></script>
+
+</body>
+</html>
